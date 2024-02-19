@@ -5,9 +5,11 @@ import 'weather_data.dart';
 import 'co2_sensor.dart';
 import 'CPS_Lab.dart';
 import 'LED_Experiment.dart';
-import 'button_experiment.dart';
+import 'lis3dh_experiment.dart';
 import 'ContactUS.dart';
 import 'SHT40_Experiment.dart';
+import 'stts751.dart';
+import 'LCD_exp.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,10 +30,12 @@ class MyApp extends StatelessWidget {
         '/weather': (context) => WeatherData(),
         '/co2Sensor': (context) => Co2Sensor(),
         '/cpsLab': (context) => CPSlab(),
-        '/LED_Experiment': (context) => LEDexperiment(),
+        '/LED_Button': (context) => LEDexperiment(),
         '/SHT40_Experiment': (context) => SHT40_Experiment(),
-        '/button_experiment': (context) => ButtonExperiment(),
+        '/STTS751_exp': (context) => STTS751(),
+        '/lis3dh': (context) => LIS3DH(),
         '/ContactUS': (context) => Contact(),
+        '/LCD_exp': (context) => LCDExp(),
       },
     );
   }

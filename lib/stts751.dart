@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ButtonExperiment extends StatefulWidget {
+class STTS751 extends StatefulWidget {
   @override
-  _ButtonExperimentState createState() => _ButtonExperimentState();
+  _STTS751State createState() => _STTS751State();
 }
 
-class _ButtonExperimentState extends State<ButtonExperiment> {
+class _STTS751State extends State<STTS751> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

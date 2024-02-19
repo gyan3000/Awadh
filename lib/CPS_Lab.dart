@@ -22,18 +22,18 @@ class CPSlab extends StatelessWidget {
             children: [
               buildCardWithImage(
                 context,
-                'LED Experiments',
+                'LED and Button Experiments',
                 'assets/images/farmer_input.jpg',
                 () {
-                  Navigator.pushNamed(context, '/LED_Experiment');
+                  Navigator.pushNamed(context, '/LED_Button');
                 },
               ),
               buildCardWithImage(
                 context,
-                'Button Experiments',
+                'LIS 3DH Experiment',
                 'assets/images/weather_data.jpg',
                 () {
-                  Navigator.pushNamed(context, '/button_experiment');
+                  Navigator.pushNamed(context, '/lis3dh');
                 },
               ),
               buildCardWithImage(
@@ -42,6 +42,22 @@ class CPSlab extends StatelessWidget {
                 'assets/images/query.jpg',
                 () {
                   Navigator.pushNamed(context, '/SHT40_Experiment');
+                },
+              ),
+              buildCardWithImage(
+                context,
+                'STTS 751 Experiment',
+                'assets/images/query.jpg',
+                () {
+                  Navigator.pushNamed(context, '/STTS751_exp');
+                },
+              ),
+              buildCardWithImage(
+                context,
+                'LCD Experiment',
+                'assets/images/query.jpg',
+                () {
+                  Navigator.pushNamed(context, '/LCD_exp');
                 },
               ),
               buildCardWithImage(
