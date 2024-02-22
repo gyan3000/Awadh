@@ -15,76 +15,87 @@ class CPSlab extends StatelessWidget {
           ),
         ),
         child: Center(
-          child: Wrap(
-            alignment: WrapAlignment.center,
-            spacing: 20, // Add spacing between cards
-            runSpacing: 20, // Add spacing between rows
-            children: [
-              buildCardWithImage(
-                context,
-                'LED and Button Experiments',
-                'assets/images/farmer_input.jpg',
-                () {
-                  Navigator.pushNamed(context, '/LED_Button');
-                },
-              ),
-              buildCardWithImage(
-                context,
-                'LIS 3DH Experiment',
-                'assets/images/weather_data.jpg',
-                () {
-                  Navigator.pushNamed(context, '/lis3dh');
-                },
-              ),
-              buildCardWithImage(
-                context,
-                'SHT40 Experiment',
-                'assets/images/query.jpg',
-                () {
-                  Navigator.pushNamed(context, '/SHT40_Experiment');
-                },
-              ),
-              buildCardWithImage(
-                context,
-                'STTS 751 Experiment',
-                'assets/images/query.jpg',
-                () {
-                  Navigator.pushNamed(context, '/STTS751_exp');
-                },
-              ),
-              buildCardWithImage(
-                context,
-                'LCD Experiment',
-                'assets/images/query.jpg',
-                () {
-                  Navigator.pushNamed(context, '/LCD_exp');
-                },
-              ),
-              buildCardWithImage(
-                context,
-                'CO2 Sensor',
-                'assets/images/contact.jpg',
-                () {
-                  Navigator.pushNamed(context, '/co2Sensor');
-                },
-              ),
-              buildCardWithImage(
-                context,
-                'Weather Sensor',
-                'assets/images/contact.jpg',
-                () {
-                  Navigator.pushNamed(context, '/weather');
-                },
-              ),
-              buildCardWithImage(
-                context,
-                'Contact Us',
-                'assets/images/contact.jpg',
-                () {
-                  Navigator.pushNamed(context, '/ContactUS');
-                },
-              ),
-            ],
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Wrap(
+              alignment: WrapAlignment.center,
+              spacing: 20, // Add spacing between cards
+              runSpacing: 20, // Add spacing between rows
+              children: [
+                buildCardWithImage(
+                  context,
+                  'LED Experiments',
+                  'assets/images/LED_exp.jpg',
+                  () {
+                    Navigator.pushNamed(context, '/LED_exp');
+                  },
+                ),
+                buildCardWithImage(
+                  context,
+                  'Button Experiments',
+                  'assets/images/Buttons_exp.jpg',
+                  () {
+                    Navigator.pushNamed(context, '/Button_exp');
+                  },
+                ),
+                buildCardWithImage(
+                  context,
+                  'LIS3DH Experiment',
+                  'assets/images/LIS3DH_exp.jpg',
+                  () {
+                    Navigator.pushNamed(context, '/lis3dh');
+                  },
+                ),
+                buildCardWithImage(
+                  context,
+                  'SHT40 Experiment',
+                  'assets/images/SHT40.jpg',
+                  () {
+                    Navigator.pushNamed(context, '/SHT40_Experiment');
+                  },
+                ),
+                buildCardWithImage(
+                  context,
+                  'STTS751 Experiment',
+                  'assets/images/STTS751.jpg',
+                  () {
+                    Navigator.pushNamed(context, '/STTS751_exp');
+                  },
+                ),
+                buildCardWithImage(
+                  context,
+                  'LCD Experiment',
+                  'assets/images/LCD_exp.jpg',
+                  () {
+                    Navigator.pushNamed(context, '/LCD_exp');
+                  },
+                ),
+                buildCardWithImage(
+                  context,
+                  'CO2 Sensor',
+                  'assets/images/Co2_sensor.jpg',
+                  () {
+                    Navigator.pushNamed(context, '/co2Sensor');
+                  },
+                ),
+                buildCardWithImage(
+                  context,
+                  'Weather Sensor',
+                  'assets/images/Weather_sensor.jpg',
+                  () {
+                    Navigator.pushNamed(context, '/weather');
+                  },
+                ),
+                buildCardWithImage(
+                  context,
+                  'Contact Us',
+                  'assets/images/contact.jpg',
+                  () {
+                    Navigator.pushNamed(context, '/ContactUS');
+                  },
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -113,15 +124,16 @@ class CPSlab extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset(
-              imagePath,
-              height: 140, // Adjust image height as needed
+            AspectRatio(
+              aspectRatio: 16 / 9,
+              child: Image.asset(
+                imagePath,
+              ),
             ),
             SizedBox(height: 20),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.transparent,
-                foregroundColor: Colors.blue,
+                backgroundColor: Colors.blue,
               ),
               onPressed: onPressed,
               child: Text(

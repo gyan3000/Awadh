@@ -10,7 +10,7 @@ class _LIS3DHState extends State<LIS3DH> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-      title: Text('Button Experiments'),
+      title: Text('LIS3DH Experiment'),
     ));
   }
 }

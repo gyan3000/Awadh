@@ -10,7 +10,7 @@ class _LCDExpState extends State<LCDExp> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-      title: Text('Button Experiments'),
+      title: Text('LCD Experiment'),
     ));
   }
 }

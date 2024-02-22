@@ -59,9 +59,12 @@ dependencies:
   geocoding: ^2.1.1
   location: ^4.3.0
   email_validator: ^2.1.16
-  youtube_player_iframe: ^4.0.4
+  youtube_player_iframe: ^5.0.0
+  video_player: ^2.8.2
+  chewie: ^1.7.5
   carousel_slider: ^4.2.1
-  syncfusion_flutter_pdfviewer: ^24.2.6
+  syncfusion_flutter_pdfviewer: ^24.2.7
+  font_awesome_flutter: ^10.7.0
 
   path: ^1.8.3
   #path_provider: ^2.0.5
@@ -138,6 +141,7 @@ flutter:
     - assets/pdf/
     #- assets/images/background.jpeg   
     - assets/images/
+    - assets/videos/
     # - assets/en.json
     # - assets/hi.json
     # - assets/pa.json

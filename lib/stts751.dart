@@ -10,7 +10,7 @@ class _STTS751State extends State<STTS751> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-      title: Text('Button Experiments'),
+      title: Text('STTS751 Experiment'),
     ));
   }
 }
