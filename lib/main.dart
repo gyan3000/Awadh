@@ -79,7 +79,6 @@ class _MyHomePageState extends State<MyHomePage> {
         );
       },
     );
-    setState(() {});
   }
 
   @override
