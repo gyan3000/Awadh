@@ -46,7 +46,7 @@ class Contact extends StatelessWidget {
                   ContactCard(
                     name: 'Jasmeen Kaur',
                     phoneNumber: '+91 6283053818',
-                    email: 'gyaneshwar494@gmail.com',
+                    email: 'jasmeensohi001@gmail.com',
                     imageUrl: 'assets/assets/images/person.jpg',
                   ),
                 ],
