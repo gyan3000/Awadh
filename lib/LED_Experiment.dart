@@ -47,7 +47,7 @@ class _LEDexperimentState extends State<LEDexperiment> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('LED Experiments'),
+        title: Text('LED and Button Experiments'),
         actions: [
           TextButton(
             onPressed: () => _openPdf(0),

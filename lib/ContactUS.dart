@@ -24,22 +24,29 @@ class Contact extends StatelessWidget {
                 children: [
                   ContactCard(
                     name: 'Desh Raj',
-                    phoneNumber: '+91 90417 56096',
+                    phoneNumber: '+91 9041756096',
                     email: 'deshraj23raj@gmail.com',
                     imageUrl: 'assets/assets/images/deshraj_sir.png',
                   ),
                   SizedBox(height: 20),
                   ContactCard(
-                    name: 'John Doe',
-                    phoneNumber: '+91 XXXXX XXXXX',
-                    email: 'john.doe@example.com',
+                    name: 'Kamaljeet Singh',
+                    phoneNumber: '+91 9459646780',
+                    email: 'kamaljeets@iitrpr.ac.in',
                     imageUrl: 'assets/assets/images/person.jpg',
                   ),
                   SizedBox(height: 20),
                   ContactCard(
-                    name: 'John',
-                    phoneNumber: '+1 987-654-3210',
-                    email: 'alice.smith@example.com',
+                    name: 'Gyaneshwar',
+                    phoneNumber: '+91 7830523000',
+                    email: 'gyaneshwar494@gmail.com',
+                    imageUrl: 'assets/assets/images/person.jpg',
+                  ),
+                  SizedBox(height: 20),
+                  ContactCard(
+                    name: 'Jasmeen Kaur',
+                    phoneNumber: '+91 6283053818',
+                    email: 'gyaneshwar494@gmail.com',
                     imageUrl: 'assets/assets/images/person.jpg',
                   ),
                 ],
@@ -71,7 +78,7 @@ class ContactCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: EdgeInsets.all(16),
+      padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
         color:
             Color.fromRGBO(255, 255, 255, 0.5), // Set transparent white color

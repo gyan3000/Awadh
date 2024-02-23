@@ -5,7 +5,12 @@ class CPSlab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CPS LAB'),
+        title: Text(
+          'CPS Lab Tutorial',
+          style: TextStyle(
+            fontSize: 24,
+          ),
+        ),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -24,18 +29,10 @@ class CPSlab extends StatelessWidget {
               children: [
                 buildCardWithImage(
                   context,
-                  'LED Experiments',
+                  'LED and Button Experiments',
                   'assets/images/LED_exp.jpg',
                   () {
                     Navigator.pushNamed(context, '/LED_exp');
-                  },
-                ),
-                buildCardWithImage(
-                  context,
-                  'Button Experiments',
-                  'assets/images/Buttons_exp.jpg',
-                  () {
-                    Navigator.pushNamed(context, '/Button_exp');
                   },
                 ),
                 buildCardWithImage(

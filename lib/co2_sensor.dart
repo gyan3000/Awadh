@@ -148,73 +148,78 @@ class _Co2SensorState extends State<Co2Sensor> {
       appBar: AppBar(
         title: Text(
           'Co2 Sensor Data',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 30,
-          ),
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              'assets/images/weather.png',
-              width: 500,
-              height: 200,
-            ),
-            Card(
-              elevation: 5,
-              child: Container(
-                width: screenSize.width * 0.8,
-                height: screenSize.height * 0.6,
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    TextField(
-                      controller: gatewayIdController,
-                      decoration:
-                          InputDecoration(labelText: 'Enter Gateway ID'),
-                    ),
-                    TextField(
-                      controller: nodeIdController,
-                      decoration: InputDecoration(labelText: 'Enter Node ID'),
-                    ),
-                    TextField(
-                      controller: startTimeController,
-                      decoration:
-                          InputDecoration(labelText: 'Enter Start Date & Time'),
-                      onTap: () => _selectStartDate(context),
-                      readOnly: true,
-                    ),
-                    TextField(
-                      controller: endTimeController,
-                      decoration:
-                          InputDecoration(labelText: 'Enter End Date & Time'),
-                      onTap: () => _selectEndDate(context),
-                      readOnly: true,
-                    ),
-                    SizedBox(height: 16),
-                    Center(
-                      child: ElevatedButton(
-                        onPressed: fetchData,
-                        child: Text('Submit'),
-                        style: ElevatedButton.styleFrom(
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 20, vertical: 16),
-                          textStyle: TextStyle(fontSize: 18),
-                          backgroundColor: Colors.white,
-                          side: BorderSide(color: Colors.red, width: 2.0),
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/images/co2_bg.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'assets/images/weather.png',
+                width: 500,
+                height: 200,
+              ),
+              Card(
+                elevation: 5,
+                color: Colors.white.withOpacity(0.5),
+                child: Container(
+                  width: screenSize.width * 0.8,
+                  height: screenSize.height * 0.6,
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      TextField(
+                        controller: gatewayIdController,
+                        decoration:
+                            InputDecoration(labelText: 'Enter Gateway ID'),
+                      ),
+                      TextField(
+                        controller: nodeIdController,
+                        decoration: InputDecoration(labelText: 'Enter Node ID'),
+                      ),
+                      TextField(
+                        controller: startTimeController,
+                        decoration: InputDecoration(
+                            labelText: 'Enter Start Date & Time'),
+                        onTap: () => _selectStartDate(context),
+                        readOnly: true,
+                      ),
+                      TextField(
+                        controller: endTimeController,
+                        decoration:
+                            InputDecoration(labelText: 'Enter End Date & Time'),
+                        onTap: () => _selectEndDate(context),
+                        readOnly: true,
+                      ),
+                      SizedBox(height: 16),
+                      Center(
+                        child: ElevatedButton(
+                          onPressed: fetchData,
+                          child: Text('Submit'),
+                          style: ElevatedButton.styleFrom(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 20, vertical: 16),
+                            textStyle: TextStyle(fontSize: 18),
+                            backgroundColor: Colors.white,
+                            side: BorderSide(color: Colors.red, width: 2.0),
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

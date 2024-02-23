@@ -175,10 +175,6 @@ class _WeatherDataState extends State<WeatherData> {
       appBar: AppBar(
         title: Text(
           'Weather Data',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 30,
-          ),
         ),
       ),
       body: Stack(

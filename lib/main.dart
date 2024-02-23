@@ -13,6 +13,7 @@ import 'stts751.dart';
 import 'LCD_exp.dart';
 import 'button_exp.dart';
 import 'CPS_lab_hardware.dart';
+import 'about_us.dart';
 
 void main() {
   runApp(MyApp());
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
         '/ContactUS': (context) => Contact(),
         '/LCD_exp': (context) => LCDExp(),
         '/cps_lab_hardware': (context) => CPSLabSetupPage(),
+        '/aboutUs': (context) => AboutUsPage(),
       },
     );
   }
@@ -67,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
     _videoPlayerController.initialize();
     _chewieController = ChewieController(
       videoPlayerController: _videoPlayerController,
-      autoPlay: true,
+      autoPlay: false,
       looping: true,
       aspectRatio: 16 / 9,
       errorBuilder: (context, errorMessage) {

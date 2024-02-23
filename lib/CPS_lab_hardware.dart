@@ -5,12 +5,17 @@ class CPSLabSetupPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CPS Lab Hardware Setup'),
+        title: Text(
+          'CPS Lab Hardware Setup',
+          style: TextStyle(
+            fontSize: 24,
+          ),
+        ),
       ),
       body: LayoutBuilder(
         builder: (context, constraints) {
           return SingleChildScrollView(
-            padding: EdgeInsets.all(16.0),
+            padding: EdgeInsets.all(20.0),
             child: ConstrainedBox(
               constraints: BoxConstraints(
                 minWidth: constraints.minWidth,
